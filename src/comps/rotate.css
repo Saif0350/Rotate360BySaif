@@ -1,0 +1,27 @@
+/* rotate.css */
+
+.iphone-container {
+  width: 200px; /* Adjust as needed */
+  height: 400px; /* Adjust as needed */
+  perspective: 1000px;
+}
+
+.iphone-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 1s ease; /* Increased duration for full 360° rotation */
+}
+
+.iphone-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iphone-image.rotate {
+  transform: rotateY(360deg); /* Full 360° rotation */
+}
