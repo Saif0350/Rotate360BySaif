@@ -11,9 +11,15 @@ const App = () => {
   const images = [img0, img1, img2, img3, img4, img5];
 
   return (
-    <div className="App flex justify-center items-center">
-      <Rotate images={images} />
-    </div>
+    <>
+      <div className="text-lg text-center font-bold text-[40px] py-3 italic">
+        360 Rotate is done Afroz
+      </div>
+
+      <div className="App flex justify-center items-center mt-4">
+        <Rotate images={images} />
+      </div>
+    </>
   );
 };
 

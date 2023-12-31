@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import "./rotate.css";
 
 const Rotate = ({ images }) => {
-  const [currentIndex, setCurrentIndex] = useState(0); // Start with the first image
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleClick = () => {
-    // Increment the current index and loop back to 0 if it exceeds the image count
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
   };
 
